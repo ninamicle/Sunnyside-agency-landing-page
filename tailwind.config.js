@@ -8,23 +8,25 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "soft-red": "hsl(7, 99%, 70%)",
+        "dark-desaturated-cyan": "hsl(167, 40%, 24%)", //(graphic design text)
+        "dark-blue": "hsl(198, 62%, 26%)", //(photography text)
+        "dark-moderate-cyan": "hsla(167, 43%, 70%, 2)", //(footer)
+        "very-dark-desaturated-blue": "hsl(212, 27%, 19%)",
+        yellow: "hsl(51, 100%, 49%)",
+        "very-dark-grayish-blue": "hsl(213, 9%, 39%)",
+        "grayish-blue": "hsl(210, 4%, 67%)",
+        "dark-grayish-blue": "hsl(232, 10%, 55%)",
+        white: "hsl(0, 0%, 100%)",
+      },
+    },
     container: {
       center: true,
       padding: "2rem",
     },
-    colors: {
-      "soft-red": "hsl(7, 99%, 70%)",
-      "dark-desaturated-cyan": "hsl(167, 40%, 24%)", //(graphic design text)
-      "dark-blue": "hsl(198, 62%, 26%)", //(photography text)
-      "dark-moderate-cyan": "hsl(168, 34%, 41%)", //(footer)
-      "very-dark-desaturated-blue": "hsl(212, 27%, 19%)",
-      yellow: "hsl(51, 100%, 49%)",
-      "very-dark-grayish-blue": "hsl(213, 9%, 39%)",
-      "grayish-blue": "hsl(210, 4%, 67%)",
-      "dark-grayish-blue": "hsl(232, 10%, 55%)",
-      white: "hsl(0, 0%, 100%)",
-    },
+
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",
