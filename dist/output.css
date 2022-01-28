@@ -481,28 +481,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.top-4 {
-  top: 1rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
 .bottom-1 {
   bottom: 0.25rem;
 }
 
-.-z-10 {
-  z-index: -10;
+.bottom-8 {
+  bottom: 2rem;
 }
 
-.z-10 {
-  z-index: 10;
+.bottom-9 {
+  bottom: 2.25rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-11 {
+  bottom: 2.75rem;
 }
 
 .flex {
@@ -511,18 +507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .grow {
@@ -566,18 +550,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsla(167, 43%, 70%, 2);
 }
 
-.bg-graphic {
-  background-image: url('../images/mobile/image-graphic-design.jpg');
-}
-
-.bg-\[url\(\'\.\.\/images\/mobile\/image-graphic-design\.jpg\'\)\] {
-  background-image: url('../images/mobile/image-graphic-design.jpg');
-}
-
-.bg-photography {
-  background-image: url('../images/mobile/image-photography.jpg');
-}
-
 .stroke-dark-desaturated-cyan {
   stroke: hsl(167, 40%, 24%);
 }
@@ -610,6 +582,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -638,12 +620,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 2.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -669,12 +659,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(167 40% 24% / var(--tw-text-opacity));
 }
 
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: hsl(198 62% 26% / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 @media (min-width: 480px) {
+  .sm\:bottom-14 {
+    bottom: 3.5rem;
+  }
+
   .sm\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -685,10 +684,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -699,13 +694,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-nowrap {
     flex-wrap: nowrap;
-  }
-
-  .md\:bg-graphic-desktop {
-    background-image: url('../images/mobile/image-graphic-design.jpg');
-  }
-
-  .md\:bg-photography-desktop {
-    background-image: url('../images/mobile/image-photography.jpg');
   }
 }
