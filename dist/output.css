@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -468,6 +468,43 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .flex {
   display: flex;
 }
@@ -476,12 +513,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .grow {
   flex-grow: 1;
 }
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -496,37 +553,61 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.bg-gray {
+  background-color: hsla(26, 100%, 99%, 1);
+}
+
 .bg-dark-moderate-cyan {
   background-color: hsla(167, 43%, 70%, 2);
+}
+
+.bg-graphic {
+  background-image: url('../images/mobile/image-graphic-design.jpg');
+}
+
+.bg-\[url\(\'\.\.\/images\/mobile\/image-graphic-design\.jpg\'\)\] {
+  background-image: url('../images/mobile/image-graphic-design.jpg');
+}
+
+.bg-photography {
+  background-image: url('../images/mobile/image-photography.jpg');
 }
 
 .stroke-dark-desaturated-cyan {
   stroke: hsl(167, 40%, 24%);
 }
 
-.p-4 {
-  padding: 1rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-2 {
   padding: 0.5rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .pb-7 {
@@ -545,6 +626,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Fraunces, serif;
 }
 
+.font-barlow-sans {
+  font-family: Barlow, sans-serif;
+}
+
+.text-tiny {
+  font-size: .875rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
 }
@@ -557,8 +646,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .lowercase {
   text-transform: lowercase;
+}
+
+.text-dark-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(232 10% 55% / var(--tw-text-opacity));
+}
+
+.text-very-dark-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(213 9% 39% / var(--tw-text-opacity));
 }
 
 .text-dark-desaturated-cyan {
@@ -582,21 +685,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
-}
 
-@media (min-width: 976px) {
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
-  .lg\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
+  .md\:bg-graphic-desktop {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+  }
+
+  .md\:bg-photography-desktop {
+    background-image: url('../images/mobile/image-photography.jpg');
   }
 }

@@ -20,6 +20,13 @@ module.exports = {
         "grayish-blue": "hsl(210, 4%, 67%)",
         "dark-grayish-blue": "hsl(232, 10%, 55%)",
         white: "hsl(0, 0%, 100%)",
+        gray: "hsla(26, 100%, 99%, 1)",
+      },
+      backgroundImage: {
+        graphic: "url('../images/mobile/image-graphic-design.jpg')",
+        photography: "url('../images/mobile/image-photography.jpg')",
+        "graphic-desktop": "url('../images/mobile/image-graphic-design.jpg')",
+        "photography-desktop": "url('../images/mobile/image-photography.jpg')",
       },
     },
     container: {
