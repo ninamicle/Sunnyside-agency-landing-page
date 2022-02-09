@@ -17,10 +17,21 @@
 }
 
 .mobile-menu {
-  /* top: 20%; */
   line-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.inset-center {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inset-center-arrow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

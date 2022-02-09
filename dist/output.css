@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -481,16 +485,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.top-1\/4 {
+  top: 25%;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-1\/4 {
-  top: 25%;
 }
 
 .top-1\/2 {
@@ -605,20 +609,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #2C7566;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
   padding: 1rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-6 {
@@ -631,6 +631,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -639,11 +644,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-1 {
@@ -799,12 +799,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .mobile-menu {
-  /* top: 20%; */
   line-height: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.inset-center {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inset-center-arrow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .after\:absolute::after {
@@ -820,6 +833,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .after\:left-0::after {
   content: var(--tw-content);
   left: 0px;
+}
+
+.after\:-z-10::after {
+  content: var(--tw-content);
+  z-index: -10;
 }
 
 .after\:block::after {
@@ -868,12 +886,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.after\:hover\:-z-10:hover::after {
+  content: var(--tw-content);
+  z-index: -10;
+}
+
 .after\:hover\:opacity-100:hover::after {
   content: var(--tw-content);
   opacity: 1;
 }
 
 @media (min-width: 480px) {
+  .sm\:visible {
+    visibility: visible;
+  }
+
   .sm\:hidden {
     display: none;
   }
