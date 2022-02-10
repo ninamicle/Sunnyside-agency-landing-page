@@ -21,6 +21,7 @@ module.exports = {
         "dark-grayish-blue": "hsl(232, 10%, 55%)",
         white: "hsl(0, 0%, 100%)",
         gray: "hsla(26, 100%, 99%, 1)",
+        "soft-blue": "rgb(255 255 255 / 30%)",
       },
       backgroundImage: {
         graphic: "url('../images/mobile/image-graphic-design.jpg')",
