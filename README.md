@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Uploading FireShot Capture 001 - Frontend Mentor - Sunnyside agency landing page.png…]()
+![FireShot Capture 001 - Frontend Mentor - Sunnyside agency landing page](https://user-images.githubusercontent.com/47386569/153643516-e0c33a6a-06ca-4256-8fdf-2563bc07a639.png)
 
 ### Links
 
