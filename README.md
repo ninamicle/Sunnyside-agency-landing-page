@@ -24,6 +24,9 @@ Users should be able to:
 ### Screenshot
 
 ![FireShot Capture 001 - Frontend Mentor - Sunnyside agency landing page](https://user-images.githubusercontent.com/47386569/153643516-e0c33a6a-06ca-4256-8fdf-2563bc07a639.png)
+![FireShot Capture 004 - Frontend Mentor - Sunnyside agency landing page - 127 0 0 1](https://user-images.githubusercontent.com/47386569/154114751-07b27689-b4e8-4f75-983c-d59ee84fc7dd.png)
+
+![FireShot Capture 005 - Frontend Mentor - Sunnyside agency landing page - 127 0 0 1](https://user-images.githubusercontent.com/47386569/154114807-8abfde2b-c7ac-4058-9db8-4dbcd96d486a.png)
 
 ### Links
 
